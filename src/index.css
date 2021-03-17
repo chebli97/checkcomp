@@ -1,13 +1,51 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+body{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Akaya Telivigala', cursive;  
+  background: #051937; 
+}
+.App{
+  margin-top: 80px;
+  flex: 300px;
+  position: absolute;
+  right: 35%;
+  border-bottom: 2px solid lightslategray;
+  border-top: 2px solid lightslategray;
+
+  width: 450px;
+  transition: 0.25s ease;
+} 
+  .App:hover{
+    transform: translate(30px, 30px);
+    background: lightslategray;
+    color: lightyellow;
+    box-shadow: 10px 10px 30px 1px rgba(0,0,0,0.75);
+    cursor: pointer;
+  }
+
+
+.name h3 span{
+  text-align: center;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+ padding-left: 25px;
+ 
+}
+.address h3 span{
+  text-align: center;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+ padding-left: 25px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.profil-photo img{
+  width: 150px;
+  height: 150px;
+  margin-bottom: 16px;
+  border: 1px dashed black;
 }
